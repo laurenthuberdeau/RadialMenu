@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_radial_menu_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="laurent.huberd.radialmenubutton.RadialMenuDemo">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:entries="@array/sports_array" />
+
+    <View android:id="@+id/overlayView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/floatingTextActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:elevation="8dp"
+        android:src="@drawable/music_icon"
+        app:backgroundTint="@android:color/holo_green_dark"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/floatingCameraActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:elevation="8dp"
+        android:src="@drawable/share_icon"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/floatingGalleryActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:elevation="8dp"
+        android:src="@drawable/speech_icon"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/floatingMoreActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:elevation="8dp"
+        android:src="@drawable/plus_sign_icon"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
