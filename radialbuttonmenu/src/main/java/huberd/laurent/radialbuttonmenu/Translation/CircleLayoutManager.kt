@@ -22,8 +22,7 @@ class CircleLayoutManager(val angleInterval: AngleInterval, val radiusMultiplier
         else
             radialMenu.secondaryButtonsSize() - index - 1
 
-        val angle = angleInterval.start
-            + _index * angleInterval.angleBetween() / (radialMenu.secondaryButtonsSize() - 1)
+        val angle = angleInterval.start + _index * angleInterval.angleBetween() / (radialMenu.secondaryButtonsSize() - 1)
 
         val radius = floatingActionButton.height * radiusMultiplier
 
