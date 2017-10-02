@@ -190,7 +190,7 @@ class RadialMenu(
         val oldState = radialMenuState
         radialMenuState = state
 
-        onRadialMenuStateChangeListener?.onStateChanged(oldState, RadialMenuState.ANIMATING)
+        onRadialMenuStateChangeListener?.onStateChanged(oldState, state)
     }
 
     private fun configureNewButton(floatingActionButton: FloatingActionButton) {
